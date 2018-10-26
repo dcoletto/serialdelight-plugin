@@ -22,6 +22,6 @@ dependencies {
 
 pluginBundle {
     website = 'N/A'
-    vcsUrl = 'N/A'
+    vcsUrl = 'https://github.com/dcoletto/serialdelight-plugin.git'
     tags = ['sql', 'sqldelight', 'serializer', 'kotlinx.serializer', 'serializable']
 }
