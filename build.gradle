@@ -6,6 +6,7 @@ plugins {
 group 'dcoletto'
 version '0.1'
 
+
 repositories {
     mavenCentral()
 }
@@ -24,4 +25,14 @@ pluginBundle {
     website = 'N/A'
     vcsUrl = 'https://github.com/dcoletto/serialdelight-plugin.git'
     tags = ['sql', 'sqldelight', 'serializer', 'kotlinx.serializer', 'serializable']
+
+    
+    plugins {
+        serialDelightPlugin {
+            id = 'com.dcoletto.serialdelight-plugin'
+            displayName = 'SerialDelight Plugin'
+            description = 'Trying to provide @Serializable for SqlDelight generated implementations'
+            //implementationClass = 'com.dcoletto.serialdelight.SerialDelightPlugin'
+        } 
+    }
 }
